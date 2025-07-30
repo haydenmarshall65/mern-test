@@ -1,3 +1,6 @@
 code/server/node_modules
 code/server/package-lock.json
 code/server/.env
+code/client/node_modules
+code/client/.env
+code/client/package-lock.json
