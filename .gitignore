@@ -6,3 +6,4 @@ code/client/.env
 code/client/package-lock.json
 .env
 mongo/data/*
+.vscode
