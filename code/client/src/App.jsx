@@ -4,11 +4,9 @@ import { Outlet } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="w-full p-6">
+      <div className="h-[100vh] w-[100vw]">
         <Navbar />
         <Outlet />
       </div>
