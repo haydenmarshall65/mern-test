@@ -9,6 +9,8 @@ services:
       - type: bind
         source: mongo/data
         target: /data/db
+    ports:
+      - "27017:27017"
     healthcheck:
       test: echo 'db.runCommand("hello").ok' | mongosh --host localhost --port 27017 --quiet
       interval: 10s
