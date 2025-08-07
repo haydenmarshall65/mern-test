@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
         res.send(results).status(200);
     } catch (err) {
         console.error(err);
-        res.status(500).send("Error fetching records");
+        res.status(500).send({"error":"Error fetching records"});
     }
 })
 
@@ -37,7 +37,7 @@ router.post("/", async (req, res) => {
         res.send(result).status(204);
     } catch (err) {
         console.error(err);
-        res.status(500).send("Error adding record");
+        res.status(500).send({"error": "Error adding record"});
     }
 })
 
@@ -62,7 +62,7 @@ router.patch("/:id", async (req, res) => {
         }
     } catch (err) {
         console.error(err);
-        res.status(500).send("Error updating record");
+        res.status(500).send({"error": "Error updating record"});
     }
 })
 
@@ -76,7 +76,7 @@ router.delete("/:id", async (req, res) => {
         res.send(result).status(200);
     } catch (err) {
         console.error(err);
-        res.status(500).send("Error deleting record");
+        res.status(500).send({"error": "Error deleting record"});
     }
 })
 
