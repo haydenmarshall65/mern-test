@@ -5,5 +5,5 @@ code/client/node_modules
 code/client/.env
 code/client/package-lock.json
 .env
-mongo/data/*
+mongo/data
 .vscode
